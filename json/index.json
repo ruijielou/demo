@@ -1,0 +1,118 @@
+{
+  "slider": [
+    {
+      "src": "./images/indexflexslide1.jpg"
+    },{
+      "src": "./images/indexflexslide2.jpg"
+    },{
+      "src": "./images/indexflexslide2.jpg"
+    }
+  ],
+   "doclist": [
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "2"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "3"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "4"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "5"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     },{
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     },
+     {
+       "src": "./images/logo.png",
+       "name": "王医生",
+       "id": "1"
+     }
+   ] ,
+  "baikelist": [
+    {
+      "title":"暑期三伏贴",
+      "id": "1"
+    },
+    {
+      "title":"暑期三伏贴1",
+      "id": "2"
+    },
+    {
+      "title":"暑期三伏贴2",
+      "id": "3"
+    },
+    {
+      "title":"暑期三伏贴3",
+      "id": "4"
+    },
+    {
+      "title":"暑期三伏贴4",
+      "id": "5"
+    },
+    {
+      "title":"暑期三伏贴5",
+      "id": "1"
+    },
+    {
+      "title":"暑期三伏贴6",
+      "id": "1"
+    },
+    {
+      "title":"暑期三伏贴7",
+      "id": "1"
+    },
+    {
+      "title":"暑期三伏贴8",
+      "id": "1"
+    },
+    {
+      "title":"暑期三伏贴9",
+      "id": "1"
+    }
+  ],
+  "newslist": [
+    {"title": "这是内容标题1","id": "1"},
+    {"title": "这是内容标题2","id": "2"},
+    {"title": "这是内容标题3","id": "3"},
+    {"title": "这是内容标题4","id": "4"},
+    {"title": "这是内容标题5","id": "5"},
+    {"title": "这是内容标题6","id": "6"},
+    {"title": "这是内容标题7","id": "7"},
+    {"title": "这是内容标题8","id": "8"},
+    {"title": "这是内容标题9","id": "9"},
+    {"title": "这是内容标题10","id": "10"},
+    {"title": "这是内容标题11","id": "11"},
+    {"title": "这是内容标题12","id": "12"}
+  ]
+}
