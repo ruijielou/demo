@@ -1,21 +1,269 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>html5</title>
-    <style type="text/css">
-    .theme{
-      display: block;
-      width: 200px;
-      font-size: 30px;
-      margin: 100px auto;
-    }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--兼容IE-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>青风中医</title>
+    <link rel="icon" href="images/logo.png">
+    <!--  Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/basicstyle.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-<div class="theme">
-  Hello, world.
-</div>
+<!--导航菜单-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--头部logo-->
+    <!--<div class="page-header ">-->
+        <!--<div class="container">-->
+            <!--<img src="images/headlogo.png" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="http://www.xinyijk.com" ><img src="images/headlogo.png" alt="青风中医"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="active"><a href="index.html">网站首页</a></li>
+                <li role="presentation"><a href="ylbaike.html">医疗百科</a></li>
+                <li role="presentation"><a href="notices.html">新闻公告</a></li>
+                <li role="presentation"><a href="aboutdoc.html">医生介绍</a></li>
+                <li role="presentation"><a href="liansuo.html">医疗连锁</a></li>
+                <li role="presentation"><a href="activities.html">公益活动</a></li>
+                <li role="presentation"><a href="training.html">培训课程</a></li>
+                <li role="presentation"><a href="aboutus.html">关于我们</a></li>
+                <li role="presentation"><a href="APP.html">APP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--轮播图-->
+<div class="container leftMargin">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner sliderList" role="listbox">
+            <script id="slidertpl" type=text/html>
+                <%for (var i=0; i < data.length; i++) {%>
+                <%if (i == 0) {%>
+                <div class="item active">
+                    <img src="<%:=data[i].src%>" alt="...">
+                </div>
+                <%} else{%>
+                <div class="item ">
+                    <img src="<%:=data[i].src%>" alt="...">
+                </div>
+                <% } %>
+                <% } %>
+            </script>
+            <!--<div class="item active">-->
+                <!--<img src="images/indexflexslide1.jpg" alt="...">-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<img src="images/indexflexslide2.jpg" alt="...">-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<img src="images/indexflexslide3.png" alt="...">-->
+            <!--</div>-->
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<!--新闻公告地图百科医生介绍部分-->
+<div class="container qf-news" >
+    <div class="row rowcontent">
+        <div class="col-md-3 news">
+                <h3 style="">新闻中心</h3>
+            <script id="newstpl" type="text/html">
+                <%for (var i = 0; i < 5; i++) { %>
+                <p><a class="localtionnews" href="javascript:;" data-num=<%:=data[i].id%> ><%:=data[i].title%></a></p>
+                <% } %>
+            </script>
+                <!--<p><a href="thenews.html">新闻内容</a></p>-->
+                <!--<p><a href="thenews.html">新闻内容</a></p>-->
+                <!--<p><a href="thenews.html">新闻内容</a></p>-->
+                <!--<p><a href="thenews.html">新闻内容</a></p>-->
+                <p id="newslist"><a href="news.html">《更多》</a></p>
+        </div>
+        <div class="col-md-3 notices">
+            <h3 style="">通知公告</h3>
+            <script id="noticestpl" type="text/html">
+                <%for (var i = 0; i < 5; i++) { %>
+            <p><a class="localtionnotices" href="javascript:;" data-num=<%:=data[i].id%> ><%:=data[i].title%></a></p>
+                <% } %>
+                </script>
+            <!--<p><a href="thenotices.html">公告内容</a></p>-->
+            <!--<p><a href="thenotices.html">公告内容</a></p>-->
+            <!--<p><a href="thenotices.html">公告内容</a></p>-->
+            <!--<p><a href="thenotices.html">公告内容</a></p>-->
+            <p id="noticeslist"><a  href="notices.html">《更多》</a></p>
+        </div>
+        <div class="col-md-3 visitimes" >
+            <p><h3 style="">出诊时间</h3> </p>
+            <p><a href="liansuo.html">点击查看</a></p>
+            <h3 style="padding-top: 4.7rem">交通导航</h3>
+            <p><a href="roommap.html">点击查看地图</a></p>
+        </div>
+        <div class="col-md-12 baikecontent">
+            <h3 style="">医疗百科 </h3>
+            <div class="row" style="margin-left: 0;">
+                <script id="tpl2" type="text/html">
+                    <%for (var i = 0; i < data.length; i++) { %>
+                    <!--<%if (data.length > 5) { i < 5 } else {i < data.length}%>-->
+                <a class="col-md-2 localtionbaike" data-num="<%:=data[i].id%>" href="javascript:;"><%:=data[i].title %></a>
+                    <% } %>
+                </script>
+                <!--<a class="col-md-2" href="baiketext.html">百科内容</a>-->
+                <!--<a class="col-md-2" href="baiketext.html">百科内容</a>-->
+                <!--<a class="col-md-2" href="baiketext.html">百科内容</a>-->
+                <!--<a class="col-md-2" href="baiketext.html">百科内容</a>-->
+                <a class="col-md-2" id="baikeList" class="pull-right" href="ylbaike.html"> more>> </a>
+            </div>
+
+        </div>
+        <div class="col-md-12 ">
+            <div class="aboutDoctor" >
+                <h3 style="margin-top: 2rem;">医生介绍 <a class="" style="font-size: 14px;margin-left: 10rem;" href="aboutdoc.html">更多>> </a></h3>
+                <div class="picMarquee-left">
+                    <div class="bd">
+                        <ul class="picList">
+                            <script id="tpl" type="text/html">
+                                <%for (var i = 0; i < data.length; i++) {%>
+                               <li>
+                                <div class="pic"><a class="localtiondoc" data-num="<%:=data[i].id%>" href="javascript:;"><img src=' <%:=data[i].src%> '/></a></div>
+                                <div class="title"><a href="javascript:;"><%:=data[i].name%></a></div>
+                            </li>
+                                <%}%>
+                            </script>
+                            <!--<li>-->
+                                <!--<div class="pic"><a class="localtiondoc" data-num="1" href="javascript:;"><img src='images/logo.png'/></a></div>-->
+                                <!--<div class="title"><a href="javascript:;">王医生</a></div>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                    <div class="hd">
+                        <a class="next"></a>
+                        <a class="prev"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="container">-->
+        <!--<div class="col-md-7 mobileImg">-->
+            <!--<img src="images/indexAboutusMobile.png" width="95%">-->
+        <!--</div>-->
+        <!--<div class="col-md-5">-->
+            <!--<h2 class="text-center">青风中医</h2>-->
+            <!--<div class="aboutusIntroduction">-->
+                <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是一款基于地理位置搜索的，针对用户预约挂号、问诊的移动咨询软件，用户可以寻找到身边的诊室，权威三甲医院大夫来诊室坐诊，为您提供相关咨询、预约挂号、医疗服务。-->
+            <!--</div>-->
+            <!--<div class="wexinInfo">扫描二维码或关注：xinyijk8001</div>-->
+            <!--<img src="images/clinicWexinCode.jpg" class="wexinCode"/>-->
+        <!--</div>-->
+<!--</div>-->
+<!--主要优势-->
+<div class="container">
+    <div class="row">
+        <h2 class="text-center ystitile">我们的主要优势</h2>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="images/outAdvantage1.png" alt="社区诊室">
+                <div class="caption text-center">
+                    <h3>社区诊室</h3>
+                    <p>定位您身边的诊室</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="images/outAdvantage2.png" alt="...">
+                <div class="caption text-center">
+                    <h3>权威专家</h3>
+                    <p>权威专家为您坐诊</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="images/outAdvantage3.png" alt="...">
+                <div class="caption text-center">
+                    <h3>在线预约</h3>
+                    <p>随时预约、查阅病历</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--友情链接-->
+<div class="container">
+    <h2 class="text-center yqlianjie">友情链接</h2>
+    <div class="row lianjieImg">
+        <div class="list-group col-md-5 ">
+            <a href="#" class="list-group-item">广东省卫生厅指定合作平台</a>
+            <a href="#" class="list-group-item ">海南省卫生厅指定合作平台</a>
+            <a href="#" class="list-group-item ">广东省医院协会指定合作平台</a>
+        </div>
+        <div class="list-group col-md-5">
+            <a href="#" class="list-group-item">深圳市卫生和人口计划生育委员会指定合作平台</a>
+            <a href="#" class="list-group-item">珠海市卫生局指定合作平台</a>
+            <a href="#" class="list-group-item ">广东省医师协会指定合作平台</a>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="media">
+        <div class="media-body text-center">
+            <address>
+                <strong>Copyright © 2015-2016 xinyijk.com All Rights Reserved 京ICP证120150号</strong><br>
+                <abbr title="Phone">Hotline:</abbr> 0771-5828049</br>
+                <a href="mailto:#">Email:xyjkcy@163.com</a>
+            </address>
+        </div>
+        <div class="media-right">
+            <!--<img class="media-object" src="images/indexWechatCode.png" alt="...">-->
+            <img class="smalllogo media-object" id="smalllogo" src="images/clinicWexinCode.jpg"/>
+        <span class="biglogo" id="biglogo">
+            <img src="images/clinicWexinCode.jpg" alt="">
+            <i class="glyphicon glyphicon-remove" id="close" aria-hidden="true"></i>
+        </span>
+        </div>
+    </div>
+</footer>
 </body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!-- Bootstrap 核心 JavaScript 文件 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/basicstyle.js"></script>
+<script src="js/template.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/index.js"></script>
 </html>

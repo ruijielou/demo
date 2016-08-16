@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--兼容IE-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>青风中医</title>
+    <link rel="icon" href="images/logo.png">
+    <!--  Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/basicstyle.css">
+    <!--<link rel="stylesheet" href="css/aboutdoc.css">-->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Bootstrap 核心 JavaScript 文件 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--导航菜单-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="http://www.xinyijk.com" ><img src="images/headlogo.png" alt="青风中医"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="index.html">网站首页</a></li>
+                <li role="presentation" class=""><a href="ylbaike.html">医疗百科</a></li>
+                <li role="presentation" ><a href="notices.html" >新闻公告</a></li>
+                <li role="presentation" class="active"><a href="aboutdoc.html">医生介绍</a></li>
+                <li role="presentation"><a href="liansuo.html">医疗连锁</a></li>
+                <li role="presentation"><a href="activities.html">公益活动</a></li>
+                <li role="presentation"><a href="training.html">培训课程</a></li>
+                <li role="presentation"><a href="aboutus.html" >关于我们</a></li>
+                <li role="presentation"><a href="APP.html">APP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container leftMargin">
+    <div class="col-xs-12 col-md-2 new_guidelines_lefthead">
+        <div class="new_guidelines_left CategoryList Categorys " data-num = "0">
+            <a href="javascript:;" class="" >
+                <h4 class="glyphicon glyphicon-play"></h4>
+                <span >全部</span>
+            </a>
+        </div>
+        <!--<script id="Categorystpl" type="text/html">-->
+            <!--<%for (var i = 0; i < data.length; i++) {%>-->
+            <!--<div class="new_guidelines_lefttwo CategoryList" data-num="<%:=data[i].id%>">-->
+                <!--<a href="javascript:;" >-->
+                    <!--<h4 class="glyphicon glyphicon-play"></h4>-->
+                    <!--<span><%:=data[i].room%></span>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<% } %>-->
+        <!--</script>-->
+
+        <!--<div class="new_guidelines_lefttwo CategoryList">-->
+            <!--<a href="javascript:;">-->
+                <!--<h4 class="glyphicon glyphicon-play"></h4>-->
+                <!--<span>外科</span>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="new_guidelines_lefttwo CategoryList">-->
+            <!--<a href="javascript:;">-->
+                <!--<h4 class="glyphicon glyphicon-play"></h4>-->
+                <!--<span>儿科</span>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="new_guidelines_lefttwo CategoryList">-->
+            <!--<a href="javascript:;">-->
+                <!--<h4 class="glyphicon glyphicon-play"></h4>-->
+                <!--<span>骨科</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
+    <div class="col-xs-12 col-md-10 new_guidelines_boxhead" id="noviciate-guide">
+        <h2 class="" style="border-bottom: 2px solid #ddd;padding-bottom: 1rem;">医生介绍 </h2>
+        <div class="row aboutdoc">
+<!--<script id="doclisttpl" type="text/html">-->
+    <!--<%for (var i = 0; i< data.length; i++) {%>-->
+    <!--<div class="media col-md-6" data-num="<%:=data[i].id%>">-->
+        <!--<div class="media-left">-->
+            <!--<a href="javascript:;">-->
+                <!--<img class="media-object" src="<%:=data[i].src%>" alt="...">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="media-body ">-->
+            <!--<a href="thedoc.html">-->
+                <!--<h4 class="media-heading"><%:=data[i].name%> <span>&#45;&#45;<%:=data[i].room%></span></h4>-->
+                <!--&lt;!&ndash;如介绍太长需要用截取字符串来操作放置文本&ndash;&gt;-->
+                <!--<p><%:=data[i].content%>.......</p>-->
+            <!--</a>-->
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--<% } %>-->
+<!--</script>-->
+
+            <!--<div class="media col-md-6">-->
+                <!--<div class="media-left">-->
+                    <!--<a href="thedoc.html">-->
+                        <!--<img class="media-object" src="images/logo.png" alt="...">-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body ">-->
+                    <!--<a href="thedoc.html">-->
+                        <!--<h4 class="media-heading">医生姓名</h4>-->
+                        <!--&lt;!&ndash;如介绍太长需要用截取字符串来操作放置文本&ndash;&gt;-->
+                        <!--<p>男，硕士，中医执业医师，本科就读于陕西中医药大学，研究生毕业于成都中医药大学，呼吸系统如：过敏性鼻炎…</p>-->
+                    <!--</a>-->
+
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="media col-md-6">-->
+                <!--<div class="media-left">-->
+                    <!--<a href="thedoc.html">-->
+                        <!--<img class="media-object" src="images/logo.png" alt="...">-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body ">-->
+                    <!--<a href="thedoc.html">-->
+                        <!--<h4 class="media-heading">医生姓名</h4>-->
+                        <!--&lt;!&ndash;如介绍太长需要用截取字符串来操作放置文本&ndash;&gt;-->
+                        <!--<p>男，硕士，中医执业医师，本科就读于陕西中医药大学，研究生毕业于成都中医药大学，呼吸系统如：过敏性鼻炎…</p>-->
+                    <!--</a>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="media">
+        <div class="media-body text-center">
+            <address>
+                <strong>Copyright © 2015-2016 xinyijk.com All Rights Reserved 京ICP证120150号</strong><br>
+                <abbr title="Phone">Hotline:</abbr> 0771-5828049</br>
+                <a href="mailto:#">Email:xyjkcy@163.com</a>
+            </address>
+        </div>
+        <div class="media-right">
+                <!--<img class="media-object" src="images/indexWechatCode.png" alt="...">-->
+            <img class="smalllogo media-object" id="smalllogo" src="images/clinicWexinCode.jpg"/>
+        <span class="biglogo" id="biglogo">
+            <img src="images/clinicWexinCode.jpg" alt="">
+            <i class="glyphicon glyphicon-remove" id="close" aria-hidden="true"></i>
+        </span>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<!--<script src="js/template.js"></script>-->
+<script src="js/basicstyle.js"></script>
+<script src="js/aboutdoc.js"></script>
+</html>

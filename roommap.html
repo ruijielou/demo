@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--兼容IE-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>青风中医</title>
+    <link rel="icon" href="images/logo.png">
+    <!--  Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/basicstyle.css">
+    <!--<link rel="stylesheet" href="css/room.css">-->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Bootstrap 核心 JavaScript 文件 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--导航菜单-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--头部logo-->
+    <!--<div class="page-header ">-->
+    <!--<div class="container">-->
+    <!--<img src="images/headlogo.png" alt="">-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="http://www.xinyijk.com"><img src="images/headlogo.png"
+                                                                                 alt="青风中医"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="index.html">网站首页</a></li>
+                <li role="presentation"><a href="ylbaike.html">医疗百科</a></li>
+                <li role="presentation"><a href="notices.html">新闻公告</a></li>
+                <li role="presentation"><a href="aboutdoc.html">医生介绍</a></li>
+                <li role="presentation" class="active"><a href="liansuo.html">医疗连锁</a></li>
+                <li role="presentation"><a href="activities.html">公益活动</a></li>
+                <li role="presentation"><a href="training.html">培训课程</a></li>
+                <li role="presentation"><a href="aboutus.html">关于我们</a></li>
+                <li role="presentation"><a href="APP.html">APP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container ">
+    <div class="col-md-12 navtitle" >
+        当前位置 <a href="">地图导航></a>
+    </div>
+    <!--<div class="col-xs-12 col-md-2 new_guidelines_lefthead" style="margin-top: 4rem;">-->
+        <!--<div class="new_guidelines_left CategoryList active">-->
+            <!--<a href="news.html">-->
+                <!--<h4 class="glyphicon glyphicon-play"></h4>-->
+                <!--<span>地图导航</span>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div class="new_guidelines_lefttwo">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="notices.html">&ndash;&gt;-->
+        <!--&lt;!&ndash;<h4 class="glyphicon glyphicon-play"></h4>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span>通知公告</span>&ndash;&gt;-->
+        <!--&lt;!&ndash;</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <div class="col-xs-12 col-xs-12 new_guidelines_boxhead roommap" id="noviciate-guide">
+        <div class="Introduction">
+            <!--<h3 style="border-bottom: 2px solid #8d8d8d;padding-bottom: 1rem;"><a href="notices.html">梁荣恩内科诊所 ></a></h3>-->
+            <!--<div class="col-md-12">-->
+                <!--<h4>诊所简介：</h4>-->
+                <!--<div href="#" class="roomAbout">-->
+                    <!--<p style="line-height: 2.2rem;color: #8d8d8d;">-->
+                        <!--诊所，又名诊疗所、医疗所、卫生所、医疗室。第四十条医疗机构的名称由识别名称和通用名称依次组成。医疗机构的通用名称为：医院、中心卫生院、卫生院、疗养院、妇幼保健院、门诊部、诊所、卫生所、卫生站、卫生室、医务室、卫生保健所、急救中心、急救站、临床检验中心、防治院、防治所、防治站、护理院、护理站、中心以及卫生部规定或者认可的其他名称。医疗机构可以下列名称作为识别名称：地名、单位名称、个人姓名、医学学科名称、医学专业和专科名称、诊疗科目名称和核准机关批准使用的名称。-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-12" style="margin-top: 3rem;">-->
+                <!--<address>-->
+                    <!--&lt;!&ndash;<h4>梁荣恩内科诊所</h4><br>&ndash;&gt;-->
+                    <!--<a>地址：桂林市叠彩区环城北路清风市场梁荣恩内科诊所</a><br>-->
+                    <!--<a>乘车路线：289路，333路，梁荣恩诊所下车</a><br>-->
+                    <!--<abbr title="Phone">电话:</abbr> 0771-5828049-->
+                <!--</address>-->
+            <!--</div>-->
+        </div>
+
+        <div class="col-md-12" id="map"></div> <!--地图div-->
+    </div>
+
+</div>
+
+<footer class="container-fluid">
+    <div class="media">
+        <div class="media-left">
+
+        </div>
+        <div class="media-body text-center">
+            <!--<h4 class="media-heading">Media heading</h4>-->
+            <address>
+                <abbr title="Phone">Hotline:</abbr> 0771-5828049
+                <a href="mailto:#">Email:xyjkcy@163.com</a><br>
+                <strong>Copyright © 2015-2016 xinyijk.com All Rights Reserved 京ICP证120150号</strong>
+            </address>
+            <!--<p>Hotline:0771-5828049&nbsp;&nbsp;</p>-->
+            <!--<p>Copyright © 2015-2016 xinyijk.com All Rights Reserved 京ICP证120150号</p>-->
+        </div>
+        <div class="media-right">
+            <!--<a href="#">-->
+            <!--<img class="media-object" src="images/indexWechatCode.png" alt="...">-->
+            <!--</a>-->
+            <img class="smalllogo media-object" id="smalllogo" src="images/clinicWexinCode.jpg"/>
+        <span class="biglogo" id="biglogo">
+            <img src="images/clinicWexinCode.jpg" alt="">
+            <i class="glyphicon glyphicon-remove" id="close" aria-hidden="true"></i>
+        </span>
+        </div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ijfYk3m6Q7cXSkkMlE0nCya5N4HnAuC5"></script>
+<script src="js/basicstyle.js"></script>
+<script src="js/roommap.js"></script>
+<script type="text/javascript">
+
+    // 百度地图API功能
+
+
+
+</script>
+</html>
