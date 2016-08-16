@@ -1,0 +1,200 @@
+body { padding-top:80px; }
+ul li {
+    list-style: none;
+}
+/*网站公共类样式文件*/
+/*.page-header {*/
+    /*margin: 20px 0 0;*/
+/*}*/
+/*.page-header img {*/
+    /*width: 18rem;*/
+    /*height: 5rem;*/
+/*}*/
+
+.navbar-brand {
+    /*background: url(../images/headlogo.png) no-repeat;*/
+    /*background-size: cover;*/
+    /*text-indent: -99999px;*/
+    /*width: auto;*/
+    /*height: 64px;*/
+    /*margin-top: 1rem;*/
+    /*margin-bottom: 1rem;*/
+    /*margin-right: 1rem;*/
+}
+.navbar-brand img {
+    width: 17rem;
+    height: 62px;
+}
+.navbar-collapse {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.navbar-default {
+    background: #ffffff;
+    border: none;
+}
+.navbar-default .navbar-nav>li>a{
+    font-size: 1.8rem;
+    color: #878787;
+    font-weight: 500;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background: #00AAFF;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>.active>a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    background: #00AAFF;
+    border-radius: 5px;
+ }
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    background: #00AAFF;
+    color: white;
+}
+.navtitle {
+    margin-top: 3rem;
+}
+ footer {
+     background: #3c3c3c;
+     color: #fff;
+     padding: 10px 0 10px;
+     position: relative;
+     bottom: 0;
+     margin-top: 2rem;
+ }
+ footer img{
+     width: 8rem;
+     height: 8rem;
+     margin-right: 8rem;
+ }
+a {
+    color: #8d8d8d;
+}
+a:hover {
+    text-decoration: none;
+    color: #00AAFF;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background: #00AAFF;
+    color: #ffffff;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background: #00AAFF;
+}
+.navbar-default .navbar-nav>.open>a:hover {
+    background: #00AAFF;
+    color: #ffffff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    background: #ddd;
+    color: #8d8d8d;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    background: #00AAFF;
+    color: #ffffff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a {
+    background: #00AAFF;
+    color: #ffffff;
+}
+.biglogo {
+    position: absolute;
+    bottom: 15rem;
+    right: 0;
+    display: none;
+}
+.biglogo img {
+    width: 18rem;
+    height: 18rem;
+    z-index: 999;
+}
+.biglogo i {
+    color: #00AAFF;
+    font-style: normal;
+    position: absolute;
+    right: 9.4rem;
+    top: 1.3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid #00AAFF;
+}
+.leftMargin {
+    margin-top: 4rem;
+}
+@media screen and (max-width: 767px){
+    .leftMargin {
+        margin-top: 0;
+    }
+}
+.navbar-default .navbar-collapse{
+    border-color: transparent;
+}
+.navbar {
+    min-height: 100px;
+}
+
+    /*aboutdoc*/
+.new_guidelines_left {
+    margin-top: 4rem;
+}
+.CategoryList a{
+    margin-left: 1rem;
+}
+.CategoryList.active {
+    background: #00AAFF;
+    border-radius: 5px;
+}
+.CategoryList.active a, .CategoryList.active a{
+    color: #ffffff !important;
+}
+.aboutdoc .media {
+    margin: 2rem auto;
+    max-height: 14rem;
+    overflow: hidden;
+}
+.media p {
+    line-height: 2rem;
+    text-indent: 2rem;
+}
+.aboutdoc #noviciate-guide img {
+    width: 80px;
+    height: 80px;
+}
+.aboutdoc img {
+    width: 10rem;
+    height: 10rem;
+}
+.aboutdoc p {
+    font-size: 1.5rem !important;
+}
+/*map*/
+#map {
+    height: 600px;
+    margin-top: 2rem;
+}
+.roommap p {
+    text-indent: 2rem;
+}
+
+/*training*/
+.the-training p {
+    line-height: 2.2rem;
+
+}
+.form-horizontal {
+    margin-top: 5rem;
+}
+
+.roomAbout {
+    text-indent: 2rem;
+}
+.navtitle, .navtitle a {
+    font-size: 2rem;
+    color: #00AAFF;
+    font-weight: 600;
+}

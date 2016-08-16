@@ -1,0 +1,113 @@
+ .carousel-inner>.item>img {
+     height: 100%;
+ }
+ .carousel-control.right, .carousel-control.left {
+     background: none;
+ }
+.qf-news p{
+    /*margin-left: 1rem;*/
+}
+.rowcontent {
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+ .news, .notices, .visitimes {
+  /*box-shadow: 0 1px 5px 0;*/
+   -moz-box-shadow:-1px -1px 6px #999 inset;
+   -webkit-box-shadow:-1px -1px 6px #999 inset;
+   box-shadow:-1px -1px 6px #999 inset;
+  border-color: #00AAFF;
+  padding: 1rem;
+   margin-right: 5rem;
+   margin-top: 1rem;
+}
+ .news h3, .notices h3, .visitimes h3 ,.baikecontent h3{
+   border-bottom: 3px double #00AAFF;
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
+   color: #00AAFF;
+ }
+ .baikecontent h3 {
+   display: inline-block;
+   padding-right: 5rem;
+ }
+ .baikecontent {
+   margin-top: 1rem;
+ }
+ /*.notices {*/
+   /*margin: 0 3rem;*/
+ /*}*/
+ .picMarquee-left{  position:relative; margin-right: 5% }
+ .picMarquee-left .hd{  height:30px; padding:0 10px;  }
+ .picMarquee-left .hd .prev,.picMarquee-left .hd .next{
+     position: absolute;
+     top: 50%;
+     margin-top: -15px;
+     right: -10%;
+     z-index: 999;
+     display:block;
+     width:30px;
+     height:30px;
+     float:right;
+     margin-right:5px;
+     cursor:pointer;
+     background:url("../images/imageRight.png") no-repeat;}
+ .picMarquee-left .hd .next{ background: url("../images/imageLeft.png") no-repeat;left: -5%;}
+ .picMarquee-left .hd .prevStop{ background-position:-60px 0; }
+ .picMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+
+ .picMarquee-left .bd{ padding:10px; margin: 2%;   }
+ .picMarquee-left .bd ul{  zoom:1; }
+ .picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; text-align:center;  }
+ .picMarquee-left .bd ul li .pic{ text-align:center; }
+ .picMarquee-left .bd ul li .pic img{ width:120px; height:120px; display:block; padding:12px;
+     transition:All 0.4s ease-in-out;
+     -webkit-transition:All 0.4s ease-in-out;
+     -moz-transition:All 0.4s ease-in-out;
+     -o-transition:All 0.4s ease-in-out;
+ }
+ .picMarquee-left .bd ul li .pic a img:hover {
+     transform:rotate(360deg) scale(1.2);
+     -webkit-transform:rotate(360deg) scale(1.2);
+     -moz-transform:rotate(360deg) scale(1.2);
+     -o-transform:rotate(360deg) scale(1.2);
+     -ms-transform:rotate(360deg) scale(1.2);
+ }
+ .picMarquee-left .bd ul li .title { width: 100%;display: block; text-align: center; }
+
+ .aboutDoctor {
+     margin-left: -80px;
+     margin-top: 100px;
+ }
+ .mobileImg {
+     width: 30%;
+     margin-left: 10rem;
+     vertical-align: middle;
+ }
+ .wexinCode {
+     width: 50%;
+     margin-left: 8rem;
+ }
+ .aboutusIntroduction, .wexinInfo {
+     font-size: 2rem;
+     margin-top: 2rem;
+ }
+ .thumbnail {
+     border: none;
+ }
+ .ystitile, .yqlianjie {
+     margin: 5rem 0;
+ }
+ .lianjieImg img{
+     height: 4rem;
+ }
+.list-group-item {
+    margin-bottom: 1.2rem;
+}
+.list-group {
+    margin-left: 6rem;
+}
+ .list-group-item {
+     border: none;
+ }
