@@ -12,10 +12,10 @@ $(function(){
                 })
             })
         };
-        this.loadHtml = function (ele,data,id){
-            var tpl = ele.html();
-            var html = template(tpl, {data: data});
-            id.html(html);
+        this.loadHtml = function (src){
+          var html = '<div class="item ">'
+              html += '<img src="'+ src +'" alt="..."></div>'
+          return html;
         };
     }
     Init.prototype = {
@@ -123,25 +123,34 @@ $(function(){
         loadSliderImg: function(){
             $.ajax({
                 url: "./json/index.json",
-                type: "post",
+                type: "GET",
                 data: "",
                 datatype: "json",
                 error: function(){
                     console.log("数据加载失败");
                 },
                 success: function(data){
-                    console.log(data.slider);
-                    init.loadHtml($("#slidertpl"),data.slider,$(".sliderList"));
+                 var str = "";
+                  for(var i = 0; i<data.slider.length; i++){
+                  str += init.loadHtml(data.slider[i].src);
+                    console.log(data.slider[i].src);
+                  }
+                  console.log(str);
+                  document.getElementById('sliderList').innerHTML = str;
+                  //$(".sliderList").html(html);
+                  $(".sliderList .item").eq(0).addClass("active")
                 }
             })
         }
     };
 //实例化对象
     var init = new Init();
-    init.loadSliderImg();
+
     init.initDonList();
     init.loadBaikeList();
     init.loadNoticesList();
     init.loadNewsList();
+    init.loadSliderImg();
+
 
 });
